@@ -1,0 +1,1932 @@
+class Personajes{
+  
+  color piel = #E9DEB0;
+  color boca = #B78F8F;
+  color corbata = #931111;
+  
+  //Magritte
+  color pantalonma = #161616;
+  color cuelloma = #383838;
+  color cabelloma = #87868A;
+  color pipama = #492400;
+  
+  //Mucha
+  color pantalonmu = #2D2C2C;
+  color cuellomu = #727176;
+  color cabellomu = #492400;
+  color chalecomu = #8E8D8D;
+  color sacomu = #444242;
+  color baston = #DB9600;
+  
+  //Botticelli
+  color cabellobo = #75360B;
+  color pantalonbo = #7C0D0D;
+  color camisabo = #5B250D;
+  color gorro = #7C0D0D;
+  color zapatosbo = #330C00;
+  
+  //Warhol
+  color ojoswa = #6DA3AF;
+  color camisawa = #660000;
+  color cuellowa = #1E1E1E;
+  color cabellowa= #C2C3C9;
+  
+  //Gogh
+  color pantalongo = #263D49;
+  color cuellogo = #299991;
+  color mono = #66CCCC;
+  color sacogo = #356867;
+  color zapatosgo = #75360B;
+  color cabellogo =#C44F00;
+  color ojosgo = #42936B;
+  
+  Personajes(){}
+  
+  void magritte(int x, int y){
+  
+  pushMatrix();
+  translate(x,y);
+  
+  //Pies, Cuello y Brazo
+  stroke(piel);
+  strokeWeight(10);
+  strokeCap(SQUARE);
+  line(101,320,101,350);
+  line(119,320,119,350);
+  
+  line(110,259,110,270);
+  
+  line(34,230,37,211);
+  
+  //Zapatos
+  noStroke();
+  fill(0);
+  beginShape();
+  vertex(107,340);
+  vertex(107,351);
+  vertex(81,351);
+  endShape(CLOSE);
+  
+  beginShape();
+  vertex(114,340);
+  vertex(114,351);
+  vertex(139,351);
+  endShape(CLOSE);
+  
+  //Pantalones
+  fill(pantalonma);
+  beginShape();
+  vertex(80,300);
+  vertex(140,300);
+  vertex(131,340);
+  vertex(114,340);
+  vertex(114,320);
+  vertex(107,320);
+  vertex(107,340);
+  vertex(89,340);
+  endShape(CLOSE);
+  
+  //Torso
+  fill(0);
+  rect(80,270,60,61);
+  
+  //Camisa
+  stroke(255);
+  strokeWeight(10);
+  strokeCap(SQUARE);
+  line(110,264,110,270);
+  
+  noStroke();
+  fill(255);
+  beginShape();
+  vertex(105,270);
+  vertex(115,270);
+  vertex(110,290);
+  endShape(CLOSE);
+  
+  //Cuello
+  fill(cuelloma);
+  beginShape();
+  vertex(105,270);
+  vertex(109,284);
+  vertex(110,290);
+  vertex(111,284);
+  vertex(115,270);
+  vertex(120,278);
+  vertex(115,280);
+  vertex(118,284);
+  vertex(110,290);
+  vertex(102,284);
+  vertex(105,280);
+  vertex(100,278);
+  endShape(CLOSE);
+  
+  //Corbata
+  fill(corbata);
+  beginShape();
+  vertex(105,270);
+  vertex(115,270);
+  vertex(110,275);
+  vertex(112,277);
+  vertex(110,281);
+  vertex(108,277);
+  vertex(110,275);
+  endShape(CLOSE);
+  
+  //Linea de Saco
+  stroke(cuelloma);
+  strokeWeight(3);
+  strokeCap(SQUARE);
+  line(110,288,110,330);
+  
+  //Botones
+  noStroke();
+  fill(cuelloma);
+  ellipse(116,299,5,5);
+  ellipse(116,310,5,5);
+  
+  //Brazos
+  noFill();
+  stroke(0);
+  strokeWeight(10);
+  strokeCap(SQUARE);
+  beginShape();
+  vertex(80,275);
+  vertex(26,270);
+  vertex(34,230);
+  endShape();
+  
+  stroke(piel);
+  line(137,306,135,307);
+  
+  stroke(0);
+  beginShape();
+  vertex(141,270);
+  vertex(152,299);
+  vertex(137,306);
+  endShape();
+  
+  //Cabello 
+  noStroke();
+  fill(cabelloma);
+  rect(50,160,120,80);
+  
+  //Orejas y Cabeza
+  fill(orejas);
+  rect(50,230,120,20);
+  
+  fill(piel);
+  rect(60,175,100,90);
+  
+  //Sombrero
+  fill(0);
+  beginShape();
+  vertex(36,150);
+  vertex(153,119);
+  vertex(164,158);
+  vertex(46,189);
+  endShape(CLOSE);
+  
+  noFill();
+  stroke(0);
+  strokeWeight(4);
+  strokeCap(SQUARE);
+  line(38,191,173,155);
+  
+  //Cejas y Boca
+  stroke(0);
+  strokeWeight(4);
+  strokeCap(SQUARE);
+  line(70,220,90,220);
+  line(130,220,150,220);
+  
+  stroke(boca);
+  line(100,250,120,250);
+  
+  //Ojos
+  noStroke();
+  fill(0);
+  ellipse(80,240,15,15);
+  ellipse(140,240,15,15);
+  
+  //Pipa
+  stroke(pipama);
+  strokeWeight(4);
+  strokeCap(SQUARE);
+  line(110,250,130,254);
+  noStroke();
+  fill(pipama);
+  beginShape();
+  vertex(124,247);
+  vertex(132,248);
+  vertex(130,255);
+  vertex(123,254);
+  endShape(CLOSE);
+  popMatrix();
+  }
+  
+  void mucha(int x, int y){
+    
+  pushMatrix();
+  translate(x,y);
+  
+  //Baston
+  noFill();
+  stroke(baston);
+  strokeWeight(3);
+  strokeCap(SQUARE);
+  beginShape();
+  vertex(286,350);
+  vertex(286,300);
+  vertex(295,300);
+  vertex(295,307);
+  endShape();
+   
+  //Pies, Cuello y Brazo
+  stroke(piel);
+  strokeWeight(10);
+  strokeCap(SQUARE);
+  line(321,320,321,350);
+  line(339,320,339,350);
+  
+  line(330,259,330,270);
+  
+  line(290,300,288,305);
+  
+  //Zapatos
+  noStroke();
+  fill(0);
+  beginShape();
+  vertex(327,340);
+  vertex(327,351);
+  vertex(301,351);
+  endShape(CLOSE);
+  
+  beginShape();
+  vertex(334,340);
+  vertex(334,351);
+  vertex(359,351);
+  endShape(CLOSE);
+  
+  //Torso
+  fill(sacomu);
+  beginShape();
+  vertex(300,270);
+  vertex(360,270);
+  vertex(360,300);
+  vertex(331,331);
+  vertex(331,320);
+  vertex(329,320);
+  vertex(329,331);
+  vertex(300,300);
+  endShape(CLOSE);
+  
+  //Camisa
+  stroke(255);
+  strokeWeight(10);
+  strokeCap(SQUARE);
+  line(330,264,330,270);
+  
+  noStroke();
+  fill(255);
+  beginShape();
+  vertex(325,270);
+  vertex(336,270);
+  vertex(333,283);
+  vertex(333,290);
+  vertex(328,290);
+  vertex(328,284);
+  endShape(CLOSE);
+  
+  //Saco Cuello
+  fill(chalecomu);
+  beginShape();
+  vertex(327,281);
+  vertex(334,281);
+  vertex(333,290);
+  vertex(336,300);
+  vertex(325,300);
+  vertex(327,290);
+  endShape(CLOSE);
+  
+  //Corbata
+  fill(corbata);
+  beginShape();
+  vertex(325,270);
+  vertex(335,270);
+  vertex(330,275);
+  vertex(332,277);
+  vertex(330,281);
+  vertex(328,277);
+  vertex(330,275);
+  endShape(CLOSE);
+  
+  //Cuello
+  fill(cuellomu);
+  beginShape();
+  vertex(325,270);
+  vertex(328,284);
+  vertex(328,290);
+  vertex(322,284);
+  vertex(325,280);
+  vertex(320,278);
+  endShape(CLOSE);
+  
+  beginShape();
+  vertex(335,270);
+  vertex(340,278);
+  vertex(335,280);
+  vertex(338,284);
+  vertex(332,290);
+  vertex(332,283);
+  endShape(CLOSE);
+  
+  //Botones
+  noStroke();
+  fill(cuellomu);
+  ellipse(323,292,5,5);
+  ellipse(322,297,5,5);
+  
+  //Pantalones
+  fill(pantalonmu);
+  beginShape();
+  vertex(300,300);
+  vertex(360,300);
+  vertex(351,340);
+  vertex(333,340);
+  vertex(333,320);
+  vertex(327,320);
+  vertex(327,340);
+  vertex(308,340);
+  endShape(CLOSE);
+  
+  //Brazos
+  noFill();
+  stroke(sacomu);
+  strokeWeight(10);
+  strokeCap(SQUARE);
+  beginShape();
+  vertex(290,300);
+  vertex(300,270);
+  endShape();
+  
+  stroke(piel);
+  line(355,307,357,306);
+  
+  stroke(sacomu);
+  beginShape();
+  vertex(360,270);
+  vertex(373,299);
+  vertex(357,306);
+  endShape();
+  
+  //Orejas y Cabeza
+  noStroke();
+  fill(orejas);
+  rect(270,230,120,20);
+  
+  fill(piel);
+  rect(280,170,100,90);
+  
+  //Cabello 
+  noStroke();
+  fill(cabellomu);
+  beginShape();
+  vertex(270,230);
+  vertex(256,180);
+  vertex(277,166);
+  vertex(330,150);
+  vertex(383,166);
+  vertex(405,180);
+  vertex(390,230);
+  vertex(380,230);
+  vertex(380,171);
+  vertex(372,170);
+  vertex(329,176);
+  vertex(280,176);
+  vertex(280,230);
+  endShape(CLOSE);
+  
+  //Cejas, Boca y Bigote
+  stroke(0);
+  strokeWeight(4);
+  strokeCap(SQUARE);
+  line(290,220,310,220);
+  line(350,220,370,220);
+  
+  stroke(boca);
+  line(320,250,340,250);
+  
+  noFill();
+  stroke(cabellomu);
+  strokeWeight(4);
+  strokeCap(SQUARE);
+  beginShape();
+  vertex(310,252);
+  vertex(310,247);
+  vertex(330,244);
+  vertex(349,247);
+  vertex(349,252);
+  endShape();
+  
+  //Ojos
+  noStroke();
+  fill(0);
+  ellipse(300,240,15,15);
+  ellipse(360,240,15,15);
+  
+  //Barba
+  noStroke();
+  fill(cabellomu);
+  beginShape();
+  vertex(308,250);
+  vertex(330,256);
+  vertex(352,250);
+  vertex(352,259);
+  vertex(330,267);
+  vertex(308,259);
+  endShape(CLOSE);
+  popMatrix();
+  }
+  
+  void boticelli(int x, int y){
+  pushMatrix();
+  translate(x,y);
+    
+  //Cabello 
+  noStroke();
+  fill(cabellobo);
+  beginShape();
+  vertex(480,170);
+  vertex(620,170);
+  vertex(630,261);
+  vertex(620,280);
+  vertex(480,280);
+  vertex(470,261);
+  endShape(CLOSE);
+   
+  //Pies y Cuello
+  stroke(piel);              
+  strokeWeight(10);
+  strokeCap(SQUARE);
+  line(530,320,530,350);
+  line(570,320,570,350);
+  
+  line(550,259,550,270);
+  
+  //Torso
+  noStroke();
+  fill(camisabo);
+  rect(520,270,60,50);
+  
+  //Zapatos
+  noStroke();
+  fill(zapatosbo);
+  beginShape();
+  vertex(536,341);
+  vertex(536,351);
+  vertex(511,351);
+  endShape(CLOSE);
+  
+  beginShape();
+  vertex(565,341);
+  vertex(565,351);
+  vertex(590,351);
+  endShape(CLOSE);
+  
+  //Camisa
+  stroke(255);
+  strokeWeight(10);
+  strokeCap(SQUARE);
+  line(550,261,550,270);
+  
+  stroke(camisabo);
+  line(550,264,550,266);
+  
+  //Linea de camiSa
+  stroke(255);
+  strokeWeight(3);
+  strokeCap(SQUARE);
+  line(550,270,550,300);
+  
+  //Botones
+  noStroke();
+  fill(255);
+  ellipse(557,275,5,5);
+  
+  //Brazo
+  stroke(piel);              
+  strokeWeight(10);
+  strokeCap(SQUARE);
+  line(523,282,540,290);
+  
+  //Pantalones
+  noStroke();
+  fill(pantalonbo);
+  beginShape();
+  vertex(520,300);
+  vertex(580,300);
+  vertex(580,330);
+  vertex(560,330);
+  vertex(560,320);
+  vertex(540,320);
+  vertex(540,330);
+  vertex(520,330);
+  endShape(CLOSE);
+  
+  //Mangas
+  noFill();
+  stroke(zapatosbo);
+  strokeWeight(16);
+  strokeCap(SQUARE);
+  beginShape();
+  vertex(580,270);
+  vertex(590,290);
+  vertex(580,295);
+  vertex(540,290);
+  endShape();
+  
+  beginShape();
+  vertex(520,270);
+  vertex(510,290);
+  vertex(520,295);
+  vertex(560,290);
+  endShape();
+  
+  //Brazo
+  stroke(piel);              
+  strokeWeight(10);
+  strokeCap(SQUARE);
+  line(560,290,575,287);
+  
+  //Cabeza
+  noStroke();
+  fill(piel);
+  rect(500,179,100,81);
+
+  //Cejas y Boca
+  stroke(cabellobo);
+  strokeWeight(4);
+  strokeCap(SQUARE);
+  line(510,220,530,220);
+  line(570,220,590,220);
+  
+  stroke(boca);
+  line(540,250,560,250);
+  
+  //Ojos
+  noStroke();
+  fill(cabellobo);
+  ellipse(520,240,15,15);
+  ellipse(580,240,15,15);
+  
+  //Gorro
+  fill(gorro);
+  rect(480,130,140,40);
+  popMatrix();
+  
+  }
+  void warhol(int x, int y){
+  pushMatrix();
+  translate(x,y);
+  
+  //Pies y cuelloma y Brazo
+  stroke(piel);
+  strokeWeight(10);
+  strokeCap(SQUARE);
+  line(750,320,750,350);
+  line(790,320,790,350);
+  
+  line(770,259,770,270);
+  
+  line(735,312,735,321);
+  
+  //Zapatos
+  noStroke();
+  fill(0);
+  beginShape();
+  vertex(756,341);
+  vertex(756,351);
+  vertex(731,351);
+  endShape(CLOSE);
+  
+  beginShape();
+  vertex(785,341);
+  vertex(785,351);
+  vertex(810,351);
+  endShape(CLOSE);
+  
+  //Torso
+  fill(0);
+  beginShape();
+  vertex(740,270);
+  vertex(800,270);
+  vertex(800,340);
+  vertex(780,340);
+  vertex(780,320);
+  vertex(760,320);
+  vertex(760,340);
+  vertex(740,340);
+  endShape(CLOSE);
+  
+  //Camisa
+  stroke(camisawa);
+  strokeWeight(11);
+  strokeCap(SQUARE);
+  line(770,264,770,270);
+  
+  noStroke();
+  fill(camisawa);
+  beginShape();
+  vertex(760,270);
+  vertex(780,270);
+  vertex(770,290);
+  endShape(CLOSE);
+  
+  //cuelloma
+  fill(cuellowa);
+  beginShape();
+  vertex(755,270);
+  vertex(760,270);
+  vertex(770,290);
+  vertex(780,270);
+  vertex(785,270);
+  vertex(783,285);
+  vertex(780,285);
+  vertex(770,290);
+  vertex(760,285);
+  vertex(757,285);
+  endShape(CLOSE);
+  
+  //Brazos
+  noFill();
+  stroke(0);
+  strokeWeight(10);
+  strokeCap(SQUARE);
+  line(735,270,735,312);
+  
+  stroke(piel);
+  line(794,307,792,308);
+  
+  stroke(0);
+  beginShape();
+  vertex(795,270);
+  vertex(810,299);
+  vertex(794,306);
+  endShape();
+  
+  //Orejas y Cabeza
+  noStroke();
+  fill(orejas);
+  rect(710,230,120,20);
+  
+  fill(piel);
+  rect(720,170,100,90);
+  
+  //Cabello 
+  noStroke();
+  fill(cabellowa);
+  beginShape();
+  vertex(720,240);
+  vertex(717,230);
+  vertex(715,241);
+  vertex(713,224);
+  vertex(710,233);
+  vertex(710,217);
+  vertex(706,233);
+  vertex(707,207);
+  vertex(704,220);
+  vertex(706,189);
+ 
+  vertex(710,168);
+  vertex(724,152);
+  vertex(740,144);
+  vertex(760,144);
+  vertex(775,147);
+  vertex(796,156);
+  vertex(787,146);
+  vertex(802,158);
+  vertex(803,147);
+  vertex(807,160);
+  
+  vertex(818,152);
+  vertex(812,161);
+  vertex(827,161);
+  vertex(833,173);
+  vertex(836,219);
+  vertex(831,205);
+  vertex(833,233);
+  vertex(830,220);
+  vertex(830,233);
+  vertex(828,226);
+  
+  vertex(825,241);
+  vertex(824,230);
+  vertex(820,244);
+  vertex(820,175);
+  vertex(818,192);
+  vertex(816,179);
+  vertex(813,192);
+  vertex(810,177);
+  vertex(800,186);
+  vertex(803,178);
+  
+  vertex(791,190);
+  vertex(793,181);
+  vertex(777,201);
+  vertex(778,186);
+  vertex(765,205);
+  vertex(767,198);
+  vertex(762,202);
+  vertex(765,191);
+  vertex(747,207);
+  vertex(747,186);
+  
+  vertex(735,201);
+  vertex(735,187);
+  vertex(727,200);
+  vertex(726,185);
+  endShape(CLOSE);
+  
+  //Cejas y Boca
+  stroke(0);
+  strokeWeight(4);
+  strokeCap(SQUARE);
+  line(730,220,750,220);
+  line(790,220,810,220);
+  
+  stroke(boca);
+  line(760,250,780,250);
+  
+  //Ojos
+  noStroke();
+  fill(ojoswa);
+  ellipse(740,240,15,15);
+  ellipse(800,240,15,15);
+  popMatrix();
+    
+  }
+  void gogh(int x, int y){
+  pushMatrix();
+  translate(x,y);
+  
+  //Pies y cuelloma y Brazo
+  stroke(piel);
+  strokeWeight(10);
+  strokeCap(SQUARE);
+  line(970,320,970,350);
+  line(1010,320,1010,350);
+  
+  line(990,259,990,270);
+  
+  //Torso
+  noStroke();
+  fill(sacogo);
+  rect(960,270,60,30);
+  
+  //Camisa
+  stroke(255);
+  strokeWeight(10);
+  strokeCap(SQUARE);
+  line(990,264,990,270);
+  
+  noStroke();
+  fill(255);
+  beginShape();
+  vertex(980,270);
+  vertex(1000,270);
+  vertex(990,290);
+  endShape(CLOSE);
+  
+  //cuelloma
+  fill(cuellogo);
+  beginShape();
+  vertex(975,270);
+  vertex(980,270);
+  vertex(990,290);
+  vertex(1000,270);
+  vertex(1005,270);
+  vertex(1003,285);
+  vertex(1000,285);
+  vertex(990,290);
+  vertex(980,285);
+  vertex(977,285);
+  endShape(CLOSE);
+  
+  //Linea de camiSa
+  stroke(cuellogo);
+  strokeWeight(3);
+  strokeCap(SQUARE);
+  line(990,290,990,300);
+  
+  //Botones
+  noStroke();
+  fill(mono);
+  ellipse(996,292,5,5);
+  ellipse(996,297,5,5);
+  
+  //Moño
+  beginShape();
+  vertex(980,264);
+  vertex(990,270);
+  vertex(1000,264);
+  vertex(1000,276);
+  vertex(990,270);
+  vertex(980,276);
+  endShape(CLOSE);
+  
+  ellipse(990,270,6,6);
+  
+  //Pantalones
+  noStroke();
+  fill(pantalongo);
+  beginShape();
+  vertex(960,300);
+  vertex(1020,300);
+  vertex(1020,340);
+  vertex(1000,340);
+  vertex(1000,320);
+  vertex(980,320);
+  vertex(980,340);
+  vertex(960,340);
+  endShape(CLOSE);
+  
+  //Zapatos
+  noStroke();
+  fill(zapatosgo);
+  beginShape();
+  vertex(976,341);
+  vertex(976,351);
+  vertex(951,351);
+  endShape(CLOSE);
+  
+  beginShape();
+  vertex(1005,341);
+  vertex(1005,351);
+  vertex(1030,351);
+  endShape(CLOSE);
+  
+ //baston
+  noFill();
+  stroke(baston);
+  strokeWeight(3);
+  strokeCap(SQUARE);
+  beginShape();
+  vertex(957,296);
+  vertex(960,291);
+  vertex(968,296);
+  vertex(940,340);
+  endShape();
+  
+  //Brazos
+  noFill();
+  stroke(sacogo);
+  strokeWeight(10);
+  strokeCap(SQUARE);
+  beginShape();
+  vertex(960,270);
+  vertex(947,299);
+  vertex(962,305);
+  endShape();
+  
+  beginShape();
+  vertex(1020,270);
+  vertex(1033,299);
+  vertex(1017,306);
+  endShape();
+  
+  stroke(piel);
+  line(961,305,964,307);
+  line(1017,306,1013,308);
+  
+  //Cabello
+  noStroke();
+  fill(cabellogo);
+  beginShape();
+  vertex(930,160);
+  vertex(990,150);
+  vertex(1050,160);
+  vertex(1050,262);
+  vertex(930,262);
+  endShape(CLOSE);
+  
+  //Orejas
+  fill(orejas);
+  rect(930,230,120,20);
+  
+  //Cabeza
+  fill(piel);
+  beginShape();
+  vertex(940,170);
+  vertex(990,180);
+  vertex(1040,170);
+  vertex(1040,253);
+  vertex(940,253);
+  endShape(CLOSE);
+  
+  //Cejas y Boca y Bigote
+  stroke(cabellogo);
+  strokeWeight(4);
+  strokeCap(SQUARE);
+  line(950,220,970,220);
+  line(1010,220,1030,220);
+  
+  stroke(boca);
+  line(980,250,1000,250);
+  
+  noFill();
+  stroke(cabellogo);
+  beginShape();
+  vertex(975,253);
+  vertex(975,244);
+  vertex(1005,244);
+  vertex(1005,253);
+  endShape();
+  
+  //Ojos
+  noStroke();
+  fill(ojosgo);
+  ellipse(960,240,15,15);
+  ellipse(1020,240,15,15);
+  popMatrix();
+    
+  }
+  
+  void premiomagritte(){
+  //magritte
+    noStroke();
+    fill(manzana);
+    beginShape();
+    vertex(592,264);
+    vertex(590,244);
+    vertex(610,244);
+    vertex(608,264); 
+    endShape();
+    
+    fill(palo);
+    beginShape();
+    vertex(600,244);
+    vertex(600,235);
+    vertex(607,235); 
+    endShape();
+  }
+  
+  void premiomucha(){
+  //mucha
+    stroke(0);
+    strokeWeight(4);
+    strokeCap(SQUARE);
+    noFill();
+    line(571,256,580,256);
+    line(595,256,605,256);
+    line(619,256,628,256);
+    ellipse(588,256,15,15);
+    ellipse(612,256,15,15);
+  }
+  
+  void premioboticelli(){
+    //boticelli
+    stroke(palo);
+    strokeWeight(4);
+    strokeCap(SQUARE);
+    noFill();
+    line(611,261,616,262);
+    stroke(255);
+    line(584,257,611,261);
+  }
+  
+  void premiowarhol(){
+    //arhol
+    noStroke();
+    fill(letracuadro);
+    rect(591,240,17,13);
+    fill(255);
+    rect(591,253,17,13);
+    fill(palo);
+    ellipse(599,253,10,10);
+  
+  }
+  
+  void premiogogh(){
+    //van gogh
+    fill(orejas);
+    rect(595,244,10,20);
+  
+  }
+}
+
+Personajes magritte;
+Personajes mucha;
+Personajes boticelli;
+Personajes warhol;
+Personajes gogh;
+
+PFont fuente1, fuente2, fuente3;
+
+color cuadro = #009966;
+color letracuadro = #990000;
+color gradaclaro = #9A999E;
+color gradaoscuro = #727176;
+color sombra1 = #2B2B2B;
+color sombra2 = #5B5B5F;
+color orejas = #CEC093;
+color amarillomedio = #D3B72A;
+color amarilloclaro = #E8CD2D;
+color amarillooscuro = #BA9E27;
+color amarillosombra = #A38B24;
+color manzana = #55973D;
+color palo = #5E3F33;
+
+int pantalla;
+int mana1;
+int mana2;
+
+int vida = 160;
+int vida1;
+int vida2;
+int defensa1 = 160;
+int defensa2 = 160;
+int ataque1;
+int ataque2;
+int turno;
+int turno1;
+int turno2;
+
+Personajes jugador1;
+Personajes jugador2;
+
+void setup(){
+  size(1100,500);
+  
+  fuente1 = createFont("Impact",10);
+  fuente2 = createFont("Pixelade",10);
+  fuente3 = createFont("pixelmix Regular",10);
+  
+  magritte = new Personajes();
+  mucha = new Personajes();
+  boticelli = new Personajes();
+  warhol = new Personajes();
+  gogh = new Personajes();
+  
+  jugador1 = new Personajes();
+  jugador2 = new Personajes();
+  
+}
+
+void draw(){
+  background(#1E1E1E);
+  
+  switch(pantalla){
+    case 0:
+    pantalla01();
+    break;
+    case 1:
+    pantalla02();
+    break;
+    case 2:
+    pantalla03();
+    break;
+    case 3:
+    pantalla04();
+    break;
+    case 4:
+    pantalla05();
+    break;
+    case 5:
+    pantalla06();
+    break;
+  }
+  println(key);
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void pantalla01(){
+  pushMatrix();
+  textFont(fuente1);
+  textSize(100);
+  textAlign(CENTER);
+  textLeading(120);
+  fill(255);
+  text("LO QUE EL TIEMPO\nSE LLEVÓ",width/2,172);
+    
+  noStroke();
+  fill(cuadro);
+  rect (380,340,340,60);
+    
+  textFont(fuente1);
+  textSize(35);
+  textAlign(CENTER);
+  fill(letracuadro);
+  text("Presiona ESPACIO",width/2,383);
+    
+  textFont(fuente2);
+  textSize(40);
+  fill(255);
+  text("para comenzar",width/2,430);
+  popMatrix();
+  
+  keyPressed();
+  if ((pantalla == 0) && (key == ' ')){
+    pantalla = 1;
+  }
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void pantalla02(){
+  pushMatrix();
+  textFont(fuente3);
+  textSize(30);
+  textAlign(CENTER);
+  fill(255);
+  text("Elige tu Jugador 1",width/2,60);
+    
+  //Sombra
+  noStroke();
+  fill(sombra1);
+  ellipse(110,355,140,30);
+  ellipse(330,355,140,30);
+  ellipse(550,355,140,30);
+  ellipse(770,355,140,30);
+  ellipse(990,355,140,30);
+  
+  magritte.magritte(0,0);
+  mucha.mucha(0,0);
+  boticelli.boticelli(0,0);
+  warhol.warhol(0,0);
+  gogh.gogh(0,0);
+  
+  //Nombres
+  //Magritte
+  noStroke();
+  fill(255);
+    
+  beginShape();
+  vertex(160,265);
+  vertex(180,245);
+  vertex(180,165);
+  vertex(260,165);
+  vertex(260,265);
+  endShape();
+    
+  textFont(fuente2);
+  textSize(20);
+  textLeading(20);
+  textAlign(CENTER);
+  fill(0);
+  text("René\nMagritte",222,210);
+    
+  //Mucha
+  noStroke();
+  fill(255);
+    
+  beginShape();
+  vertex(360,260);
+  vertex(480,260);
+  vertex(480,340);
+  vertex(380,340);
+  vertex(380,280);
+  endShape();
+    
+  textFont(fuente2);
+  textSize(20);
+  textLeading(20);
+  textAlign(CENTER);
+  fill(0);
+  text("Alfons\nMucha",430,297);
+    
+  //Boticelli
+  noStroke();
+  fill(255);
+    
+  beginShape();
+  vertex(580,160);
+  vertex(580,140);
+  vertex(560,140);
+  vertex(560,100);
+  vertex(680,100);
+  vertex(680,140);
+  vertex(600,140);
+  endShape();
+    
+  textFont(fuente2);
+  textSize(20);
+  textLeading(20);
+  textAlign(CENTER);
+  fill(0);
+  text("Sandro Botticelli",620,125);
+    
+  //Warhol
+  noStroke();
+  fill(255);
+    
+  beginShape();
+  vertex(720,260);
+  vertex(720,320);
+  vertex(620,320);
+  vertex(620,280); 
+  vertex(700,280);
+  endShape();
+    
+  textFont(fuente2);
+  textSize(20);
+  textLeading(20);
+  textAlign(CENTER);
+  fill(0);
+  text("Andy Warhol",670,304);
+   
+  //Gogh
+  noStroke();
+  fill(255);
+  
+  beginShape();
+  vertex(840,100);
+  vertex(960,100);
+  vertex(960,160);
+  vertex(940,160);
+  vertex(940,180);
+  vertex(920,160); 
+  vertex(840,160);
+  endShape();
+    
+  textFont(fuente2);
+  textSize(20);
+  textLeading(20);
+  textAlign(CENTER);
+  fill(0);
+  text("Vincent\nVan Gogh",900,127);
+  
+  //Mana
+  textFont(fuente3);
+  textSize(18);
+  textAlign(CENTER);
+  fill(255);
+  text("Ataque: 4",96,400);
+  text("Defensa: 14",110,420);
+  
+  text("Ataque: 3",315,400);
+  text("Defensa: 10",329,420);
+  
+  text("Ataque: 2",536,400);
+  text("Defensa: 12",550,420);
+  
+  text("Ataque: 3",755,400);
+  text("Defensa: 20",769,420);
+  
+  text("Ataque: 4",975,400);
+  text("Defensa: 17",989,420);
+   
+  //Selección
+  noStroke();
+  fill(cuadro);
+  
+  rect(40,430,140,40); 
+  
+  rect(260,430,140,40);
+     
+  rect(480,430,140,40);
+   
+  rect(700,430,140,40);
+   
+  rect(920,430,140,40);
+   
+  textFont(fuente1);
+  textSize(25);
+  textAlign(CENTER);
+  fill(letracuadro);
+  text("'a'",108,460);
+   
+  text("'s'",330,460);
+   
+  text("'d'",550 ,460);
+   
+  text("'f'",770,460);
+   
+  text("'g'",990,460);
+  popMatrix();
+  
+  //JUGADOR1
+  if (keyPressed) {
+    switch(key) {
+    case 'a':
+    jugador1 = magritte;
+    mana1 = 0;
+    pantalla = 2;
+    break;
+    case 's':
+    jugador1 = mucha;
+    mana1 = 1;
+    pantalla = 2;
+    break;
+    case 'd':
+    jugador1 = boticelli;
+    mana1 = 2;
+    pantalla = 2;
+    break;
+    case 'f':
+    jugador1 = warhol;
+    mana1 = 3;
+    pantalla = 2;
+    break;
+    case 'g':
+    jugador1 = gogh;
+    mana1 = 4;
+    pantalla = 2;
+    break;
+    }
+  }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void pantalla03(){
+  pushMatrix();
+  textFont(fuente3);
+  textSize(30);
+  textAlign(CENTER);
+  fill(255);
+  text("Elige tu Jugador 2",width/2,60);
+    
+  //Sombra
+  noStroke();
+  fill(sombra1);
+  ellipse(110,355,140,30);
+  ellipse(330,355,140,30);
+  ellipse(550,355,140,30);
+  ellipse(770,355,140,30);
+  ellipse(990,355,140,30);
+  
+  magritte.magritte(0,0);
+  mucha.mucha(0,0);
+  boticelli.boticelli(0,0);
+  warhol.warhol(0,0);
+  gogh.gogh(0,0);
+  
+  //Nombres
+  //Magritte
+  noStroke();
+  fill(255);
+    
+  beginShape();
+  vertex(160,265);
+  vertex(180,245);
+  vertex(180,165);
+  vertex(260,165);
+  vertex(260,265);
+  endShape();
+   
+  textFont(fuente2);
+  textSize(20);
+  textLeading(20);
+  textAlign(CENTER);
+  fill(0);
+  text("René\nMagritte",222,210);
+    
+  //Mucha
+  noStroke();
+  fill(255);
+    
+  beginShape();
+  vertex(360,260);
+  vertex(480,260);
+  vertex(480,340);
+  vertex(380,340);
+  vertex(380,280);
+  endShape();
+   
+  textFont(fuente2);
+  textSize(20);
+  textLeading(20);
+  textAlign(CENTER);
+  fill(0);
+  text("Alfons\nMucha",430,297);
+   
+  //Boticelli
+  noStroke();
+  fill(255);
+   
+  beginShape();
+  vertex(580,160);
+  vertex(580,140);
+  vertex(560,140);
+  vertex(560,100);
+  vertex(680,100);
+  vertex(680,140);
+  vertex(600,140);
+  endShape();
+    
+  textFont(fuente2);
+  textSize(20);
+  textLeading(20);
+  textAlign(CENTER);
+  fill(0);
+  text("Sandro Botticelli",620,125);
+    
+  //Warhol
+  noStroke();
+  fill(255);
+    
+  beginShape();
+  vertex(720,260);
+  vertex(720,320);
+  vertex(620,320);
+  vertex(620,280); 
+  vertex(700,280);
+  endShape();
+   
+  textFont(fuente2);
+  textSize(20);
+  textLeading(20);
+  textAlign(CENTER);
+  fill(0);
+  text("Andy Warhol",670,304);
+  
+  //Gogh
+  noStroke();
+  fill(255);
+   
+  beginShape();
+  vertex(840,100);
+  vertex(960,100);
+  vertex(960,160);
+  vertex(940,160);
+  vertex(940,180);
+  vertex(920,160);
+  vertex(840,160);
+  endShape();
+    
+  textFont(fuente2);
+  textSize(20);
+  textLeading(20);
+  textAlign(CENTER);
+  fill(0);
+  text("Vincent\nVan Gogh",900,127);
+   
+  //Mana
+  textFont(fuente3);
+  textSize(18);
+  textAlign(CENTER);
+  fill(255);
+  text("Ataque: 4",96,400);
+  text("Defensa: 14",110,420);
+   
+  text("Ataque: 3",315,400);
+  text("Defensa: 10",329,420);
+   
+  text("Ataque: 2",536,400);
+  text("Defensa: 12",550,420);
+  
+  text("Ataque: 3",755,400);
+  text("Defensa: 20",769,420);
+  
+  text("Ataque: 4",975,400);
+  text("Defensa: 17",989,420);
+  
+  //Seleccion
+  noStroke();
+  fill(cuadro);  
+   
+  rect(40,430,140,40);
+  
+  rect(260,430,140,40);
+   
+  rect(480,430,140,40);
+   
+  rect(700,430,140,40);
+   
+  rect(920,430,140,40);
+   
+  textFont(fuente1);
+  textSize(25);
+  textAlign(CENTER);
+  fill(letracuadro);
+  text("'h'",108,460);
+  
+  text("'j'",330,460);
+  
+  text("'k'",550 ,460);
+  
+  text("'l'",770,460);
+  
+  text("'ñ'",990,460);
+  popMatrix();
+  
+  //JUGADOR2
+  if (keyPressed) {
+    switch(key) {
+    case 'h':
+    jugador2 = magritte;
+    mana2 = 0;
+    pantalla = 3;
+    break;
+    case 'j':
+    jugador2 = mucha;
+    mana2 = 1;
+    pantalla = 3;
+    break;
+    case 'k':
+    jugador2 = boticelli;
+    mana2 = 2;
+    pantalla = 3;
+    break;
+    case 'l':
+    jugador2 = warhol;
+    mana2 = 3;
+    pantalla = 3;
+    break;
+    case 'ñ':
+    jugador2 = gogh;
+    mana2 = 4;
+    pantalla = 3;
+    break;
+    }
+  }
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void pantalla04(){
+  pushMatrix();
+  noStroke();
+  fill(cuadro);
+  rect (280,85,540,180);
+  rect (380,340,340,60);
+  
+  textFont(fuente1);
+  textSize(30);
+  textAlign(CENTER);
+  textLeading(35);
+  fill(letracuadro);
+  text("Para ganar lo que el tiempo se llevó\ntendrás que vencer a tu contrincante.\n¿Estás listo?",width/2,151);
+  textSize(35);
+  text("Presiona ESPACIO",width/2,383);
+  
+  textFont(fuente2);
+  textSize(40);
+  fill(255);
+  text("para comenzar",width/2,430);
+  popMatrix();
+    
+  keyPressed();
+  if ((pantalla == 3) && (key == ' ')) {
+    pantalla = 4;
+  }
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void pantalla05(){//COMBATE
+  pushMatrix();
+  textFont(fuente3);
+  textSize(18);
+  textAlign(CENTER);
+  fill(255);
+  text("Defensa",550,50);
+   
+  text("Presiona",331,400);
+  text("para atacar",332,472);
+  
+  text("Presiona",771,400);
+  text("para atacar",772,472);
+  
+  textFont(fuente2);
+  textSize(50);
+  text("Jugador 1",329,99);
+  text("Jugador 2",775,99);
+  
+  noStroke();
+  fill(cuadro);
+  rect (260,410,140,40);
+  rect (700,410,140,40);
+  
+  textFont(fuente1);
+  textSize(25);
+  textAlign(CENTER);
+  fill(letracuadro);
+  text("'a'",329,440);
+  text("'ñ'",769,440);
+   
+  //Sombra
+  noStroke();
+  fill(sombra1);
+  ellipse(329,355,140,30);
+  ellipse(769,355,140,30);
+  
+  //JUGADOR1
+    switch(mana1) {
+    case 0:
+    jugador1.magritte(220,0);
+    pantalla = 4;
+    ataque1 = 40;
+    turno1 = 0;
+    vida1 = 0;
+    break;
+    case 1:
+    jugador1.mucha(0,0);
+    pantalla = 4;
+    ataque1 = 30;
+    turno1 = 0;
+    vida1 = 1;
+    break;
+    case 2:
+    jugador1.boticelli(-220,0);
+    pantalla = 4;
+    ataque1 = 25;
+    turno1 = 0;
+    vida1 = 2;
+    break;
+    case 3:
+    jugador1.warhol(-440,0);
+    pantalla = 4;
+    ataque1 = 30;
+    turno1 = 0;
+    vida1 = 3;
+    break;
+    case 4:
+    jugador1.gogh(-660,0);
+    pantalla = 4;
+    ataque1 = 40;
+    turno1 = 0;
+    vida1 = 4;
+    break;
+    }
+    
+    //JUGADOR2
+    switch(mana2) {
+    case 0:
+    jugador2.magritte(660,0);
+    pantalla = 4;
+    ataque2 = 40;
+    turno2 = 1;
+    vida2 = 0;
+    break;
+    case 1:
+    jugador2.mucha(440,0);
+    pantalla = 4;
+    ataque2 = 30;
+    turno2 = 1;
+    vida2 = 1;
+    break;
+    case 2:
+    jugador2.boticelli(220,0);
+    pantalla = 4;
+    ataque2 = 25;
+    turno2 = 1;
+    vida2 = 2;
+    break;
+    case 3:
+    jugador2.warhol(0,0);
+    pantalla = 4;
+    ataque2 = 30;
+    turno2 = 1;
+    vida2 = 3;
+    break;
+    case 4:
+    jugador2.gogh(-220,0);
+    pantalla = 4;
+    ataque2 = 40;
+    turno2 = 1;
+    vida2 = 4;
+    break;
+    }
+  
+    textFont(fuente3);
+    textSize(55);
+    textAlign(CENTER);
+    fill(cuadro);
+    
+  //DEF1
+  switch(vida1){
+    case 0:
+    noStroke();
+    fill(cuadro);
+    rect(250,30,defensa1,30);
+    break;
+    case 1:
+    noStroke();
+    fill(cuadro);
+    rect(250,30,defensa1,30);
+    break;
+    case 2:
+    noStroke();
+    fill(cuadro);
+    rect(250,30,defensa1,30);
+    break;
+    case 3:
+    noStroke();
+    fill(cuadro);
+    rect(250,30,defensa1,30);
+    break;
+    case 4:
+    noStroke();
+    fill(cuadro);
+    rect(250,30,defensa1,30);
+    break;
+  }
+  
+    //DEF2
+    switch(vida2){
+    case 0:
+    noStroke();
+    fill(cuadro);
+    rect(695,30,defensa2,30);
+    break;
+    case 1:
+    noStroke();
+    fill(cuadro);
+    rect(695,30,defensa2,30);
+    break;
+    case 2:
+    noStroke();
+    fill(cuadro);
+    rect(695,30,defensa2,30);
+    break;
+    case 3:
+    noStroke();
+    fill(cuadro);
+    rect(695,30,defensa2,30);
+    break;
+    case 4:
+    noStroke();
+    fill(cuadro);
+    rect(695,30,defensa2,30);
+    break;
+  }
+  
+  //Turno
+  switch(turno){
+  case 0:
+  if(keyPressed){
+    if((key == 'a')||(key == 'a')){
+      defensa2 = defensa2 - ataque1;
+      turno = 1;
+    }
+  }
+  break;
+  case 1:
+  if(keyPressed){
+    if((key == 'ñ')||(key == 'ñ')){
+      defensa1 = defensa1 - ataque2;
+      turno = 0;
+    }
+  }
+  break;
+}
+
+if(defensa1<=0){
+    pantalla = 5;
+  }
+  if(defensa2<=0){
+    pantalla = 5;
+  }
+
+  popMatrix();
+ 
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void pantalla06(){
+  pushMatrix();
+  noStroke();
+  fill(gradaclaro);
+  rect(0,300,1100,200);
+  fill(gradaoscuro);
+  rect(0,360,1100,40);
+  rect(0,420,1100,40);
+  rect(0,480,1100,20);
+    
+  //Pedestal
+  fill(sombra2);
+  ellipse(600,335,140,30);
+  fill(amarillomedio);
+  rect(570,310,60,30);
+  fill(amarilloclaro);
+  rect(580,260,40,70);
+  fill(amarillomedio);
+  rect(570,280,60,10);
+  fill(amarillooscuro);
+  rect(570,250,60,30);
+  fill(amarillosombra);
+  ellipse(600,264,32,6);
+    
+  textFont(fuente2);
+  textSize(60);
+  textAlign(CENTER);
+  fill(255);
+  text("¡FELICIDADES!",width/2,94);
+    
+  textSize(30);
+  textLeading(25);
+  text("Presiona ' m '\n para volver al menú",width/2,418);
+    
+  //Sombra
+  noStroke();
+  fill(sombra2);
+  ellipse(480,335,140,30);
+ 
+  if((defensa1<=0)&&(mana2==0)){
+    magritte.magritte(370,-18);
+    magritte.premiomagritte();
+    pantalla = 5;
+  }
+  if((defensa1<=0)&&(mana2==1)){
+    mucha.mucha(150,-18);
+    mucha.premiomucha();
+    pantalla = 5;
+  }
+  if((defensa1<=0)&&(mana2==2)){
+    boticelli.boticelli(-70,-18);
+    boticelli.premioboticelli();
+    pantalla = 5;
+  }
+  if((defensa1<=0)&&(mana2==3)){
+    warhol.warhol(-290,-18);
+    warhol.premiowarhol();
+    pantalla = 5;
+  }
+  if((defensa1<=0)&&(mana2==4)){
+    gogh.gogh(-510,-18);
+    gogh.premiogogh();
+    pantalla = 5;
+  } 
+  
+  if((defensa2<=0)&&(mana1==0)){
+    magritte.magritte(370,-18);
+    magritte.premiomagritte();
+    pantalla = 5;
+  }
+  if((defensa2<=0)&&(mana1==1)){
+    mucha.mucha(150,-18);
+    mucha.premiomucha();
+    pantalla = 5;
+  }
+  if((defensa2<=0)&&(mana1==2)){
+    boticelli.boticelli(-70,-18);
+    boticelli.premioboticelli();
+    pantalla = 5;
+  }
+  if((defensa2<=0)&&(mana1==3)){
+    warhol.warhol(-290,-18);
+    warhol.premiowarhol();
+    pantalla = 5;
+  }
+  if((defensa2<=0)&&(mana1==4)){
+    gogh.gogh(-510,-18);
+    gogh.premiogogh();
+    pantalla = 5;
+  }
+  
+  if((defensa1<=0)&&(mana2==0)){
+    magritte.magritte(370,-18);
+    magritte.premiomagritte();
+    pantalla = 5;
+  }
+  if((defensa1<=0)&&(mana2==1)){
+    mucha.mucha(150,-18);
+    mucha.premiomucha();
+    pantalla = 5;
+  }
+  if((defensa1<=0)&&(mana2==2)){
+    boticelli.boticelli(-70,-18);
+    boticelli.premioboticelli();
+    pantalla = 5;
+  }
+  if((defensa1<=0)&&(mana2==3)){
+    warhol.warhol(-290,-18);
+    warhol.premiowarhol();
+    pantalla = 5;
+  }
+  if((defensa1<=0)&&(mana2==4)){
+    gogh.gogh(-510,-18);
+    gogh.premiogogh();
+    pantalla = 5;
+  }
+  
+  if((defensa2<=0)&&(mana1==0)){
+    magritte.magritte(370,-18);
+    magritte.premiomagritte();
+    pantalla = 5;
+  }
+  if((defensa2<=0)&&(mana1==1)){
+    mucha.mucha(150,-18);
+    mucha.premiomucha();
+    pantalla = 5;
+  }
+  if((defensa2<=0)&&(mana1==2)){
+    boticelli.boticelli(-70,-18);
+    boticelli.premioboticelli();
+    pantalla = 5;
+  }
+  if((defensa2<=0)&&(mana1==3)){
+    warhol.warhol(-290,-18);
+    warhol.premiowarhol();
+    pantalla = 5;
+  }
+  if((defensa2<=0)&&(mana1==4)){
+    gogh.gogh(-510,-18);
+    gogh.premiogogh();
+    pantalla = 5;
+  }
+  
+ popMatrix();
+  
+  keyReleased();
+  if ((pantalla == 5) && (key == 'm')) {
+    pantalla = 0;
+    mana1 = 0;
+    mana2 = 0;
+    vida = 160;
+    defensa1 = 160;
+    defensa2 = 160;
+  }
+}
